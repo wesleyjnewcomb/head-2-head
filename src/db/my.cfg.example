@@ -1,0 +1,4 @@
+[client]
+host = dev.db.com
+username = username
+password = password
