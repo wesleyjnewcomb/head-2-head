@@ -22,5 +22,7 @@ COPY Gemfile .
 RUN bundle install
 # copy source code
 COPY src src
+# allow traffic on port 4567 for sinatra
+EXPOSE 4567
 # app entry point
 CMD ["ruby", "src/app.rb"]
